@@ -2,15 +2,29 @@
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8">
-    <title>英雄联盟</title>
+    <title>LOL</title>
 </head>
 
-<frameset rows="100%">-->
+<!-- <frameset rows="100%">
    <frame src="https://shenshuxin.cn:8443">
    <noframes>
        <body>Please follow <a href="https://shenshuxin.cn:8443">link</a>.</body>
    </noframes>
-</frameset>
+</frameset> -->
 
+<h1 id="h1id" style="color: dodgerblue">微信等浏览器会提示非标准端口访问，点击继续就好，放心访问,<font style="color: red" id="sid">3</font>秒后自动跳转</h1>
+<h1><a href="https://shenshuxin.cn:8443">点此立即跳转</a></h1>
+<script>
+    setInterval(()=>{
+        let innerText = parseInt(document.getElementById('sid').innerText);
+        console.log(innerText)
+        if (innerText <= 0){
+            window.location.href = 'https://shenshuxin.cn:8443'
+            document.getElementById('h1id').innerText = '正在跳转=https://shenshuxin.cn:8443'
+            return
+        }
+        document.getElementById('sid').innerText = (--innerText).toString()
+    },1000)
+</script>
 
 </html>
