@@ -27,13 +27,12 @@
 <script>
     setInterval(()=>{
         let innerText = parseInt(document.getElementById('sid').innerText);
-        console.log(innerText)
-        if (innerText <= 0){
+        if (--innerText <= 0){
             window.location.href = 'http://shenshuxin.tpddns.cn:30010'
             document.getElementById('h1id').innerText = '正在跳转=http://shenshuxin.tpddns.cn:30010'
             return
         }
-        document.getElementById('sid').innerText = (--innerText).toString()
+        document.getElementById('sid').innerText = (innerText).toString()
     },1000)
 </script>
 
