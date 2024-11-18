@@ -19,7 +19,7 @@
 </h2>
 
 <h1 id="h1id" style="color: dodgerblue">微信会提示非标准端口访问，点击继续,<font style="color: red" id="sid">5</font>秒后自动跳转</h1>
-<h2><a href="https://shenshuxin.cn:30443">点此立即跳转 https://shenshuxin.cn:30443</a></h2>
+<h2><a href="https://www.shenshuxin.cn:30443">点此立即跳转 https://www.shenshuxin.cn:30443</a></h2>
 <hr>
     不建议使用微信内置浏览器打开此网站，存储的cookie会被微信清除，导致此网站重新登录。<br>
     推荐使用手机自带的浏览器或者Google浏览器访问。
@@ -28,8 +28,8 @@
     setInterval(()=>{
         let innerText = parseInt(document.getElementById('sid').innerText);
         if (--innerText <= 0){
-            window.location.href = 'https://shenshuxin.cn:30443'
-            document.getElementById('h1id').innerText = '正在跳转=https://shenshuxin.cn:30443'
+            window.location.href = 'https://www.shenshuxin.cn:30443'
+            document.getElementById('h1id').innerText = '正在跳转=https://www.shenshuxin.cn:30443'
             return
         }
         document.getElementById('sid').innerText = (innerText).toString()
